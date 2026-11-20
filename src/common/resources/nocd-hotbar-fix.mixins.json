@@ -1,0 +1,7 @@
+{
+  "required": true,
+  "package": "dev.nocdhotbarfix.mixin",
+  "compatibilityLevel": "${compat}",
+  "client": ["KeyboardMixin", "KeyBindingAccessor"],
+  "injectors": { "defaultRequire": 1 }
+}

@@ -1,0 +1,5 @@
+.gradle/
+build/
+build26/build/
+gradle.properties
+*.log

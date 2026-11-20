@@ -1,0 +1,28 @@
+plugins { id 'net.fabricmc.fabric-loom' }
+
+['minecraft_version','loader_version','java_version','flavor','mixin_compat'].each { k ->
+    if (!project.hasProperty(k) || project.property(k) == 'UNSET')
+        throw new GradleException("versions/*.properties: '${k}' is UNSET. Fill it from https://fabricmc.net/develop (see README).")
+}
+
+version = "${mod_version}+${minecraft_version}"
+base { archivesName = 'nocd-hotbar-fix' }
+
+sourceSets.main {
+    java.srcDirs      = ['../src/common/java',      "../src/${flavor}/java"]
+    resources.srcDirs = ['../src/common/resources']
+}
+
+dependencies {
+    minecraft "com.mojang:minecraft:${minecraft_version}"
+    implementation "net.fabricmc:fabric-loader:${loader_version}"
+}
+
+tasks.withType(JavaCompile).configureEach { options.release = java_version.toInteger() }
+
+processResources {
+    def props = [version: version, mc: minecraft_version, java: java_version,
+                 loader: loader_version, compat: mixin_compat]
+    inputs.properties(props)
+    filesMatching(['fabric.mod.json', '*.mixins.json']) { expand(props) }
+}

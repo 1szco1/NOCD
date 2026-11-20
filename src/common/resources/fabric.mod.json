@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "id": "nocd_hotbar_fix",
+  "version": "${version}",
+  "name": "NOCD + Hotbar Fix",
+  "description": "NOCD (No Opposing Cardinal Directions) for the hotbar: clears pending key-repeat presses and cancels held same-group keys without restoring them on release. Ticks and vanilla switching logic are untouched.",
+  "authors": ["sz_co / 1szco1"],
+  "contributors": ["Disproven (found the key-repeat backlog bug, original Hotbar Repeat Fix)"],
+  "license": "MIT",
+  "environment": "client",
+  "mixins": ["nocd-hotbar-fix.mixins.json"],
+  "depends": { "minecraft": "${mc}", "fabricloader": ">=${loader}" }
+}

@@ -1,0 +1,1 @@
+Build notes are in README.md. Jars in dist/ are the built outputs for all 11 versions.
