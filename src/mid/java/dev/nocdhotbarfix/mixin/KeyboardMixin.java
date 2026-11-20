@@ -1,6 +1,7 @@
 package dev.nocdhotbarfix.mixin;
 
 import dev.nocdhotbarfix.Nocd;
+import dev.nocdhotbarfix.NocdAdapter;
 import net.minecraft.client.Keyboard;
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.option.KeyBinding;

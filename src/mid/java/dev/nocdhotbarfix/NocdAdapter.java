@@ -1,4 +1,4 @@
-package dev.nocdhotbarfix.mixin;
+package dev.nocdhotbarfix;
 
 import dev.nocdhotbarfix.Nocd;
 import net.minecraft.client.MinecraftClient;

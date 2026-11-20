@@ -1,0 +1,31 @@
+name: Build 26.x jars
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '25'
+      - name: Get Gradle
+        run: |
+          curl -fsSL -o gradle.zip https://services.gradle.org/distributions/gradle-9.6.0-bin.zip
+          unzip -q gradle.zip
+      - name: Build
+        run: |
+          mkdir -p dist
+          for v in 26.1 26.2 26.3; do
+            cp "versions/$v.properties" build26/gradle.properties
+            (cd build26 && ../gradle-9.6.0/bin/gradle --no-daemon -Dorg.gradle.workers.max=1 clean build)
+            find build26/build/libs -maxdepth 1 -name '*.jar' \
+              ! -name '*-sources.jar' ! -name '*-dev.jar' -exec cp -f {} dist/ \;
+          done
+      - uses: actions/upload-artifact@v4
+        with:
+          name: nocd-jars-26
+          path: dist/*.jar

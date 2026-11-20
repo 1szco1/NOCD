@@ -1,4 +1,4 @@
-package dev.nocdhotbarfix.mixin;
+package dev.nocdhotbarfix;
 
 import com.mojang.blaze3d.platform.InputConstants;
 import dev.nocdhotbarfix.Nocd;

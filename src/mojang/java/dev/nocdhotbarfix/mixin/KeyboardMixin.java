@@ -1,6 +1,7 @@
 package dev.nocdhotbarfix.mixin;
 
 import dev.nocdhotbarfix.Nocd;
+import dev.nocdhotbarfix.NocdAdapter;
 import net.minecraft.client.KeyMapping;
 import net.minecraft.client.KeyboardHandler;
 import net.minecraft.client.Minecraft;
