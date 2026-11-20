@@ -87,7 +87,7 @@ Flavors: `legacy16` = 1.16.5, `mid` = 1.18.2 to 1.21.4, `modern` = 1.21.11, `moj
 ## Links and support
 
 - Source: https://github.com/1szco1/nocd-hotbar-fix
-- Downloads: https://github.com/1szco1/nocd-hotbar-fix/releases/tag/v1.0.0
+- Downloads: https://github.com/1szco1/nocd-hotbar-fix/releases/tag/v1.0.1
 - Bugs and issues: Discord **sz_co**
 
 ## Credits
