@@ -80,6 +80,12 @@ Flavors: `legacy16` = 1.16.5, `mid` = 1.18.2 to 1.21.4, `modern` = 1.21.11, `moj
 `test/NocdTest.java` checks the cancellation table and can be compiled on its own against
 `src/common/java/dev/nocdhotbarfix/Nocd.java`.
 
+## Links and support
+
+- Source: https://github.com/1szco1/nocd-hotbar-fix
+- Downloads: https://github.com/1szco1/nocd-hotbar-fix/releases/tag/v1.0.0
+- Bugs and issues: Discord **sz_co**
+
 ## Credits
 
 - sz_co / 1szco1: this port and its multi-version build
