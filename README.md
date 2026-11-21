@@ -2,8 +2,6 @@
 
 ![Banner](nocd_banner_anim.gif)
 
-![Logo](nocd_logo_anim.gif)
-
 NOCD stands for **No Opposing Cardinal Directions**. This is a small Fabric client mod that fixes
 hotbar key-repeat backlog and adds key cancellation with no restore. It builds for 11 Minecraft
 versions: 1.16.5, 1.18.2, 1.19.4, 1.20.1, 1.20.4, 1.21.1, 1.21.4, 1.21.11, 26.1, 26.2 and 26.3.
